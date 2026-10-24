@@ -1,0 +1,57 @@
+/* Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; line-height: 1.6; }
+
+/* Sistem Anotasi Wireframe */
+[data-anno] { position: relative; border: 2px dashed #aaa; margin: 20px; padding: 20px; background: #fff; }
+[data-anno]::before {
+  content: attr(data-anno);
+  position: absolute; top: -12px; left: 20px;
+  background: #3f6f9f; color: #fff; font-size: 12px; font-weight: bold;
+  padding: 4px 10px; border-radius: 4px;
+}
+
+/* Placeholder Gambar */
+.hero-img, .img-placeholder {
+  background: #ddd; border: 2px dashed #888;
+  display: flex; align-items: center; justify-content: center;
+  color: #666; font-size: 14px;
+}
+
+/* 1. Header & Navbar */
+.topbar { display: flex; justify-content: space-between; align-items: center; background: #e0e0e0; border-color: #666; }
+.logo { font-size: 20px; font-weight: bold; }
+nav a { text-decoration: none; color: #333; margin-left: 15px; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+
+/* 2. Hero */
+.hero { display: flex; gap: 20px; align-items: center; }
+.hero-text { flex: 1; }
+.hero-text h1 { font-size: 28px; margin-bottom: 10px; }
+.btn { display: inline-block; padding: 10px 20px; background: #ccc; color: #333; text-decoration: none; margin-top: 10px; border: 1px solid #888; }
+.hero-img { flex: 1; height: 200px; }
+
+/* 3. Tentang */
+.tentang { display: flex; gap: 20px; background: #fafafa; }
+.tentang .hero-img { flex: 1; height: 200px; }
+.tentang-text { flex: 1; }
+.stats { display: flex; gap: 10px; margin-top: 15px; }
+.stats div { flex: 1; background: #e0e0e0; padding: 10px; text-align: center; border: 1px solid #aaa; }
+
+/* 4. Layanan */
+.cards { display: flex; gap: 15px; margin-top: 15px; }
+.card { flex: 1; background: #e0e0e0; padding: 15px; text-align: center; border: 1px solid #aaa; }
+.img-placeholder { height: 60px; margin-bottom: 10px; }
+
+/* 5. Kontak & Footer */
+.kontak { display: flex; justify-content: space-between; align-items: flex-end; background: #e0e0e0; border-color: #666; }
+.footer-box { font-size: 12px; color: #666; }
+
+/* RESPONSIVE (MOBILE) */
+@media (max-width: 768px) {
+  .topbar { flex-direction: column; gap: 10px; text-align: center; }
+  nav a { margin: 0 8px; }
+  .hero, .tentang, .cards, .kontak { flex-direction: column; }
+  .hero-img, .tentang .hero-img { width: 100%; }
+  .stats { flex-direction: column; }
+}
