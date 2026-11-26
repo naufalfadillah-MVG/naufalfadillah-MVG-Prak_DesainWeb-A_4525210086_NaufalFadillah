@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daun Kita | Toko Tanaman Hias</title>
+    <meta name="description" content="Daun Kita: toko tanaman hias untuk rumah, kos, dan kantor." />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSS custom: dipanggil SETELAH Bootstrap -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#menuUtama" data-bs-root-margin="0px 0px -50%" data-bs-smooth-scroll="true" tabindex="0">
+
+    <!-- ===== 1. NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top nav-daun">
+      <div class="container">
+        <a class="navbar-brand logo" href="#beranda">&#127811; Daun<span>Kita</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama" aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuUtama">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#koleksi">Koleksi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kenapa">Kenapa Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== 2. HERO ===== -->
+    <header id="beranda" class="hero py-5">
+      <div class="container py-lg-5">
+        <div class="row align-items-center gy-4">
+          <div class="col-12 col-lg-6">
+            <span class="badge hero-badge mb-3">Tanaman Hias &bull; Bergaransi Hidup</span>
+            <h1 class="hero-title">Hijaukan Ruangmu, <span>Mulai dari Satu Pot</span></h1>
+            <p class="lead hero-text">
+              Tanaman sehat, mudah dirawat, dan cocok untuk rumah, kos, maupun kantor.
+              Dikirim dengan packing aman sampai tujuan.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-2">
+              <a href="#koleksi" class="btn btn-daun btn-lg">Lihat Koleksi</a>
+              <a href="#kontak" class="btn btn-garis btn-lg">Tanya Admin</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row g-3 hero-grid text-center">
+              <div class="col-4"><div class="hero-box">&#127797;<small>Kaktus</small></div></div>
+              <div class="col-4"><div class="hero-box">&#129716;<small>Monstera</small></div></div>
+              <div class="col-4"><div class="hero-box">&#127807;<small>Sirih Gading</small></div></div>
+              <div class="col-12"><div class="hero-info">Buka setiap hari, <strong>09.00 &ndash; 18.00 WIB</strong></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== 3. ALERT PROMO ===== -->
+    <section class="container alert-wrap">
+      <div class="alert alert-promo alert-dismissible fade show" role="alert">
+        <strong>&#127873; Promo Akhir Tahun!</strong> Gratis pot tanah liat untuk pembelian 2 tanaman dengan kode
+        <span class="kode">HIJAU26</span>, berlaku sampai 31 Desember 2026.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button>
+      </div>
+    </section>
+
+    <!-- ===== 4. KOLEKSI (3 CARD) ===== -->
+    <section id="koleksi" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="label">KOLEKSI PILIHAN</p>
+          <h2 class="judul">Tiga Tanaman Paling Dicari</h2>
+        </div>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card kartu h-100">
+              <div class="kartu-atas bg-1">&#129716;</div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">Monstera Deliciosa</h3>
+                <p class="card-text">Daun besar berlubang yang jadi primadona dekorasi ruang tamu. Suka cahaya terang tidak langsung.</p>
+                <p class="harga">Rp 85.000</p>
+                <button class="btn btn-daun mt-auto" data-bs-toggle="modal" data-bs-target="#modalBeli">Beli</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card kartu h-100">
+              <div class="kartu-atas bg-2">&#127797;</div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">Kaktus Mini</h3>
+                <p class="card-text">Tahan banting dan cuma perlu disiram seminggu sekali. Pas untuk meja kerja atau kamar kos.</p>
+                <p class="harga">Rp 25.000</p>
+                <button class="btn btn-daun mt-auto" data-bs-toggle="modal" data-bs-target="#modalBeli">Beli</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card kartu h-100">
+              <div class="kartu-atas bg-3">&#127807;</div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">Sirih Gading</h3>
+                <p class="card-text">Tanaman rambat yang mudah tumbuh, bisa digantung atau diletakkan di rak. Cocok untuk pemula.</p>
+                <p class="harga">Rp 35.000</p>
+                <button class="btn btn-daun mt-auto" data-bs-toggle="modal" data-bs-target="#modalBeli">Beli</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KENAPA KAMI ===== -->
+    <section id="kenapa" class="kenapa py-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-12 col-lg-5">
+            <p class="label label-terang">KENAPA DAUN KITA</p>
+            <h2 class="judul text-white">Tanaman Sehat, Pembeli Tenang</h2>
+          </div>
+          <div class="col-12 col-lg-7">
+            <p class="text-white-50">
+              Daun Kita adalah UMKM tanaman hias yang dirintis mahasiswa pecinta tanaman.
+              Setiap tanaman dicek dulu sebelum dikirim, dan kami siap membantu kalau ada yang layu.
+            </p>
+            <ul class="poin list-unstyled mb-0">
+              <li>&#10003; Garansi tanaman hidup 7 hari</li>
+              <li>&#10003; Packing kardus dan kertas pelindung</li>
+              <li>&#10003; Gratis panduan perawatan via WhatsApp</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. KONTAK (FORM) ===== -->
+    <section id="kontak" class="py-5">
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-12 col-lg-5">
+            <p class="label">KONTAK</p>
+            <h2 class="judul">Bingung Pilih Tanaman?</h2>
+            <p>Ceritakan kondisi ruanganmu, kami bantu rekomendasikan tanaman yang cocok.</p>
+            <ul class="list-unstyled">
+              <li class="mb-1">&#128205; Jl. Taman Asri No. 21, Bandung</li>
+              <li class="mb-1">&#128222; 0857-1122-3344</li>
+              <li>&#9993; halo@daunkita.id</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-7">
+            <form class="kotak-form" action="#" method="post">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" placeholder="Nama lengkap" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="nama@email.com" required />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pertanyaanmu..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-daun w-100">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. FOOTER ===== -->
+    <footer class="footer-daun py-4">
+      <div class="container">
+        <div class="row align-items-center gy-2">
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <span class="logo">&#127811; Daun<span>Kita</span></span>
+            <p class="small mb-0 mt-1">&copy; 2026 Daun Kita. Hak cipta dilindungi.</p>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <a href="#" class="sosmed">Instagram</a>
+            <a href="#" class="sosmed">Shopee</a>
+            <a href="#" class="sosmed">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== 5. MODAL ===== -->
+    <div class="modal fade" id="modalBeli" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-daun">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="judulModal">Ketentuan Pembelian</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="small mb-0">
+              <li>Pesanan diproses lewat WhatsApp admin.</li>
+              <li>Ambil di toko atau kirim ke seluruh Indonesia.</li>
+              <li>Pembayaran via QRIS atau transfer bank.</li>
+              <li>Klaim garansi maksimal 7 hari dengan foto tanaman.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            <button type="button" class="btn btn-daun" data-bs-dismiss="modal">Lanjut ke WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS (sudah termasuk Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
